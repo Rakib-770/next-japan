@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: ${{ secrets.IMAGE_NAME }}  # dockerhub/repo
+      IMAGE_NAME: ${{ secrets.IMAGE_NAME }} # dockerhub/repo
 
     steps:
       - name: Checkout repo
@@ -57,7 +57,7 @@ jobs:
           push: true
           tags: ${{ secrets.IMAGE_NAME }}:latest
 
-    deploy:
+  deploy:
     runs-on: ubuntu-latest
     needs: build-and-push
     steps:
