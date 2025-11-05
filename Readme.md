@@ -40,6 +40,6 @@ Add the following secrets:
 
 ### 3️⃣ Push the CI Workflow
 
-Make sure your workflow file exists at: .github/workflows/ci.yml..
+Make sure your workflow file exists at: .github/workflows/ci.yml
 
 
