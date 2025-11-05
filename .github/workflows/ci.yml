@@ -57,7 +57,7 @@ jobs:
           push: true
           tags: ${{ secrets.IMAGE_NAME }}:latest
 
-  deploy:
+    deploy:
     runs-on: ubuntu-latest
     needs: build-and-push
     steps:
